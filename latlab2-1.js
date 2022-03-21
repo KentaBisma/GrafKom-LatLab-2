@@ -103,8 +103,8 @@ async function initPaintedVoxels() {
 
     return new Promise ((resolve) => {
         var texture = new Image();
-        texture.crossorigin = "Anonymous"
-        texture.src = 'items/'+item+'.png';
+        texture.crossOrigin = "Anonymous"
+        texture.src = 'https://raw.githubusercontent.com/KentaBisma/GrafKom-LatLab-2/master/items/'+item+'.png';
         texture.onload = async () => {
             context.drawImage(texture, 0, 0);
             for (let i = 0; i < 16; i++) {
